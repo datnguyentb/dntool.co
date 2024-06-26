@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DN tool</title>
+    <title>dntool.co</title>
     <link rel="stylesheet" href="./assets/icon/fontAwesome/fontAwesome/all.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3kB0iGP61Yzedb44J4hoL9Wgibx_jXnKuLg&s">
 </head>
+<script type="module" src="./assets/audio/index.js"></script>
 <body>
     <div id="main">
         <div id="header">
@@ -129,6 +130,54 @@
             </div>
             <div class="converter-settings">
 
+            </div>
+        </div>
+
+        <div id="music_player">
+            <div class="wrapper">
+                <div class="song_infor">
+                    <audio></audio>
+                    <div class="avatar">
+                        <img src="./assets/audio/imgs/perfect.jpg" alt="">
+                    </div>
+                    <div class="song_name">
+                        
+                    </div>
+                    <div class="active">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="control_menu">
+                    <div class="top">
+                        <div class="shuffle">
+                            <i class="fa-regular fa-shuffle"></i>
+                        </div>
+                        <div class="back">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div class="play">
+                            <i class="fa-solid fa-circle-play"></i>
+                            <!-- <i class="fa-solid fa-circle-play"></i> -->
+                        </div>
+                        <div class="next">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </div>
+                        <div class="encore">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <span class="current-time">0:00</span>
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <span class="current-time">4:30</span>
+                    </div>
+                </div>
+                <div class="setting">
+
+                </div>
             </div>
         </div>
 
