@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4rem;
+  color: #222222;
+}
+
+a[href] {
+  text-decoration: none;
+  color: #222222;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  line-height: 1.1;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-size: 39px;
+}
+
+span {
+  font-family: 'Bree Serif', cursive !important;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#header {
+  padding: 30px 0 30px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #008cba;
+  align-items: center;
+}
+#header .back-home {
+  display: flex;
+  align-items: center;
+}
+#header .back-home h1 {
+  margin-right: 10px;
+  color: #fff;
+}
+#header .back-home span {
+  color: #fff;
+  font-size: 20px;
+}
+#header .audio {
+  background-color: #FFDD00;
+  cursor: pointer;
+  height: 45px;
+  margin-right: 26px;
+  border-radius: 12px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+#header .audio i {
+  font-size: 16px;
+}
+#header .audio span {
+  margin-left: 8px;
+}
+
+#content .title-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+#content .title-container h1 {
+  text-align: center;
+  font-size: 39px;
+  margin-top: 21px;
+  margin-bottom: 10.5px;
+}
+#content .title-container p {
+  text-align: center;
+  margin: 0 0 10.5px;
+}
+#content .main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#content .main-content h2 {
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 10.5px;
+  color: #008cba;
+  font-size: 32px;
+}
+#content .wrapper-data {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+#content .left-content-container {
+  padding: 0 15px;
+  width: 45%;
+}
+#content .left-content-container:hover .copy-import-btn {
+  display: inline-block;
+}
+#content .center-content-container {
+  margin-top: 100px;
+}
+#content .center-content-container li {
+  text-align: center;
+  height: 42px;
+  background-color: #008cba;
+  margin-bottom: 10px;
+  width: 160px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#content .center-content-container li:hover {
+  background-color: #006d91;
+}
+#content .center-content-container li:first-child {
+  background-color: #e7e7e7;
+}
+#content .center-content-container li:first-child:hover {
+  background-color: #d3d3d3;
+}
+#content .center-content-container li:last-child {
+  background-color: #f04124;
+}
+#content .center-content-container li:last-child:hover {
+  background-color: #dc2c0f;
+}
+#content .center-content-container i {
+  color: #fff;
+  font-size: 22px;
+}
+#content .center-content-container select {
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 22px;
+  height: 100%;
+}
+#content .center-content-container option {
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+#content .right-content-container {
+  padding: 0 15px;
+  width: 45%;
+}
+#content .right-content-container:hover .copy-export-btn {
+  display: inline-block;
+}
+#content .linedwrap {
+  display: flex;
+  border: 1px solid #c0c0c0;
+}
+#content .lines {
+  width: 50px;
+  padding-top: 5px;
+  margin-right: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+#content .lines span {
+  text-align: right;
+  width: 45px;
+  padding-right: 6.5px;
+  font-size: 10px;
+  background-color: #eee;
+  border-right: 1px solid #c0c0c0;
+}
+#content .lines span.no-color {
+  background-color: #fff !important;
+}
+#content .codelines {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#content .box-data {
+  width: 100%;
+  padding: 4px 2px;
+}
+#content textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+#content .copy-btn {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+  width: fit-content;
+  cursor: pointer;
+  color: #fff;
+  background-color: #008cba;
+  padding: 5px;
+  display: none;
+}
+#content .copy-btn:hover {
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+#footer {
+  margin-top: 50px;
+  padding: 30px 0;
+}
+#footer .section-title {
+  background-color: #007196;
+  padding: 30px 15px 30px 15px;
+  width: 100%;
+}
+#footer .section-title h3 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 200;
+}
+
+/*# sourceMappingURL=style.css.map */
